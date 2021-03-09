@@ -1,0 +1,39 @@
+:root {
+    --color_background: #000000;
+    --color_text_primary: #ffffff;
+    --color_text_secondary: #dcdcdc;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color_background);
+    color: var(--color_text_primary);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.center {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.center .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#clock {
+    font-size: 28px;
+}
+
+#date {
+    font-weight: 500;
+    color: var(--color_text_secondary);
+}
